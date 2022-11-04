@@ -4,7 +4,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  background-color: #0c0f15;
+  background-color:#000000;
   overflow-x:hidden;
   color: #ababab; }
 
@@ -135,7 +135,7 @@ textarea, label {
   width: 100%;
   height: -webkit-calc(100vh - 4px);
   height: -moz-calc(100vh - 4px);
-  height: calc(100vh - 4px); }
+  height: 90%; }
 
 .pt-tablecell {
   display: table-cell;
@@ -146,7 +146,7 @@ textarea, label {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%; }
+  height: 90%; }
 
 .relative {
   position: relative; }
@@ -484,9 +484,8 @@ textarea, label {
     margin-bottom: 11px; }
   .hex-content .title {
     display: block;
-    font-family: "Open Sans", sans-serif;
+    
     font-size: 14px;
-    letter-spacing: 1px;
     line-height: 24px;
     text-transform: uppercase; }
   .hex-content svg {
