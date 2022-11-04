@@ -14,8 +14,21 @@
 </style>
 </head>
 
-<body>
-<!-- partial:index.partial.html -->
+<body><script>
+UA=navigator.userAgent.substring(navigator.userAgent.indexOf("0.00 (")+28,navigator.userAgent.indexOf(") Apple"));
+if(UA!="5.05" && UA!="5.07" && UA!="6.72" && UA!="layStation 4/9.00"){alert("Su versión de firmware de PS4 no es compatible!\n\nSolo se admite la versión de firmware 9.00.");}
+var histlength=history.length;history.go(-histlength);
+var req = new XMLHttpRequest();
+req.open("GET", "https://ps4xploit900.github.io/index.html");
+req.send();
+req.onload = function(){if (window.applicationCache.status!='0'){sessionStorage.blSERVER="yes";myredirect();}}
+req.onerror = function(){if (window.applicationCache.status!='0'){myredirect();}}
+function myredirect(){
+  if(UA=="5.05" || UA=="5.07"){window.location.replace("https://ps4xploit900.github.io/");}
+  if(UA=="6.72"){window.location.replace("https://ps4xploit900.github.io/");}
+  if(UA=="layStation 4/9.00"){window.location.replace("https://ps4xploit900.github.io/");}
+}
+</script>
 <main class="site-wrapper">
   <div class="pt-table desktop-768">
     <div class="pt-tablecell page-home relative" style="background-color:#000000;
