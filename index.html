@@ -215,7 +215,12 @@ function myredirect(){
     <p class="title">Special Thanks to: leeful, karo_sharifi, ChendoChap, SiSTR0 ... And everyone who contributes to the scene Website by <a href="https://twitter.com/mour0ne" target="_blank" class="Estilo10" style="text-decoration:none">Mouuu</a></p>
   </div>
 </main>
-<div align="center">
+<div align="center"><p id="demo"></p>
+
+<script>
+let agent = navigator.userAgent;
+document.getElementById("demo").innerHTML = "<br>" + agent;
+</script>
   <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
 </div>
