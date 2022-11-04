@@ -133,8 +133,8 @@ textarea, label {
 .pt-table {
   display: table;
   width: 100%;
-  height: -webkit-calc(100vh - 4px);
-  height: -moz-calc(100vh - 4px);
+  height: 90%;
+  height: 90%;
   height: 90%; }
 
 .pt-tablecell {
