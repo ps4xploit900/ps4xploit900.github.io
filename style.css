@@ -337,7 +337,7 @@ textarea, label {
   background-size: cover;
   vertical-align: middle; }
   .page-home .overlay {
-    background-color: rgba(14, 17, 24, 0.97);
+    background-color:#000000;
 }
 
 /* End of container */
