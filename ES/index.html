@@ -83,7 +83,7 @@ function myredirect(){
                 if(window.applicationCache.status==2){localStorage.is755BCached=true;}
         	window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Instalando caché sin conexión ...";localStorage.is755BCached=false;};
 		window.applicationCache.onprogress=function(a){document.getElementById("myBar").style.width=(Math.round(100*(a.loaded/a.total)))+"%";document.getElementById("myBar").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
-		window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Page Cached Successfully ㋡!";localStorage.is755BCached=true;setTimeout(function(){window.location.reload("myBar"); }, 1500);};
+		window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Página almacenada en caché con éxito ㋡!";localStorage.is755BCached=true;setTimeout(function(){window.location.reload("myBar"); }, 1500);};
         	window.applicationCache.onnoupdate=function(){window.location.replace("lndex.html");};
         	window.applicationCache.onerror=function(){window.location.replace("lndex.html");};
         </script>
