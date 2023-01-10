@@ -1,3 +1,6 @@
+/*------------------------------------------------
+   basic css , complete on Index inline
+-------------------------------------------------*/
 html, body{
 margin:auto;
 font-family:sans-serif;
@@ -8,78 +11,7 @@ color:black;
 background-size:cover;
 	background-color:black;
 }
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
 
-/* Modal Content */
-.modal-content {
-  font-family: BFARNAZ;
-  font-size: 18px;
-  position: relative;
-  background-color: #dddddd;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-.vid
-{
-    object-fit: inherit;
-    position: fixed;
-    right: 0;
-    z-index: -1;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0.4;
-}
-.bg-darker {
-    background-color: #24272b !important;
-}
-
-		.button {
-		  background:rgba(0,0,0,0.5);
-		  box-shadow: 0 5px 20px 0 white;
-		  border: 2px solid black;
-      border-radius: 25% 10%;
-		  color: white;
-		  text-decoration: none;
-		  width: 200px;
-          height: 40px;
-		  display:inline-table;
-		  font-family: system-ui;
-		  text-align: center;
-		}
-		.button:focus,
-		.button:hover {
-		  color: White;
-		  box-shadow: 0 5px 50px 0 white;
-		  background-color: #0F0F53;
-          border-radius: 25% 10%;
-		}
-
-#PF {
-position:fixed; right:0; top:0;  margin:auto; max-width:100%; max-height:100%;
-width:200px;
-height:50px;
-z-index:10;
-}
 .bgIMG {
 position:fixed; left:0; right:0; top:0; bottom:0; margin:auto; max-width:100%; max-height:100%;
 width:100%;
@@ -300,7 +232,6 @@ to {left:0px; width:1000px;background:rgba(255,255,255,0.9);}
 #Tick {margin:auto;
 display:inline-block;
 vertical-align:middle;
-background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABXUlEQVRIS7WUO07EMBBAZ+ysqOjR0gIHgArR8FGQQAiJhAvAUiG4CwXQ8qkQxUppNtmCxDWcgII7QJ3ERo7IAomTdbyJS8t6bzw/hI4PdsyHVgUb3uH8XBIPQte/ygNvTSDhvSQeI8C6ALhmrn8pJa0I/sJ/U463kTO6mFmghv9ohLiZSVAH58A5RXpmLNCBh87ozkigCzcq8jQ4Ag6YG9yX2nT7+WBRkMRDKs7Do/GragCbwic/yOA0ZQCwxAG+KOG7RYkJPBPYnt1PE4sJgOU8aimxQNgvbvAm70zhmWBruBeBgM1SSjj/FEjtuGe95xNafCNbEQWesuPgoWqn4c5wfyVJRUQI9FUSQPwAxDUT+KQGtRJFaDqRl7pIVyLhBMlJ5PiPOqv+36BNkzSFKwetSmICr5zkosQUXrsqcgkQvtAk58W61C47KUmBrzIneNIpqOqN0TZtIutc8A0EzeZ95hEC7AAAAABJRU5ErkJggg===) no-repeat center center;
 height:50px;
 width:50px;
 border:0px solid #ccc;
