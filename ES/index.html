@@ -1,4 +1,4 @@
-<html manifest="mouuu.manifest"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="shortcut icon" href="https://ps4xploit900.github.io/jailbreak/img/icon-ps.ico"><!-- PS4 Jailbreak Host 9.00FW > Special Thanks to: @leeful @karo_sharifi SiSTR0 . And everyone who contributes to the scene. Website by Mouuu - Twitter:@mour0ne -Youtube: Mouuu -->
+<html manifest="mouuu.manifest"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="shortcut icon" href="https://ps4xploit900.github.io/jailbreak/img/icon-ps.ico"><!--PS4JailbreakHost9.00FW >Website by Mouuu -Twitter:@mour0ne -Youtube: Mouuu -->
 <title>PS4 XPLOIT 900 HOST 🇪🇸  by Mouuu</title>
 <link rel="stylesheet prefetch" href="Style.css">
 <style>
@@ -12,28 +12,6 @@ margin: 0px;
 overflow: hidden;
 border-top:4px solid #FFFC33;
 }
-  .themes {
-   width:98%;
-   margin:0 auto;
-   margin-left:2%;
-   margin-top:2%;
-  }
-  .theme {
-    background:rgba(0,0,0,0.75);
-    width:14.1%;
-    text-align:center;
-    display:inline-block;
-    margin-right:2.5%;
-    margin-bottom:2.5%;
-  }
-  .theme img {
-    width:100%;
-  }
-  .theme span  {
-   color:white;
-   display:block;
-   padding:10px;
-  }
 
 		#myProgress{
 		  border: 5px solid #454444;
@@ -93,32 +71,5 @@ border-top:4px solid #FFFC33;
 		<h1 id="myProgress">
 		  <div id="myBar">...100%</div>
 		</h1>
-        <script type="text/javascript">
- if(localStorage.getItem("theme")==null){
-   localStorage.setItem("theme","1.jpg")
- }
- document.body.style.background = "url('"+localStorage.getItem("theme")+"')"
- document.body.style.backgroundSize = "cover"
- var imgs = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg"];
- render()
- function render(){
-     document.querySelector(".themes").innerHTML=""
-	 for(let i=0;i<imgs.length;i++){
-	    var selectText = "Select"
-	    var textColor = "white"
-	    if(localStorage.theme==imgs[i]){
-	      selectText="Selected"
-	      textColor="green"
-	    }
-	 	document.querySelector(".themes").innerHTML+='<div class="theme" ><img src="'+imgs[i]+'" ><span style="color:'+textColor+';" onclick="set('+i+')">'+selectText+'</span></div>';
-	 }
- }
- function set(i){
-    localStorage.setItem("theme",imgs[i])
-    render()
- 	document.body.style.background = "url('"+imgs[i]+"')"
- 	document.body.style.backgroundSize = "cover"
- }
-</script>
 	</body>
 </html>
