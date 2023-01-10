@@ -85,32 +85,5 @@ function myredirect(){
 		<h1 id="myProgress">
 		  <div id="myBar">...100%</div>
 		</h1>
-        <script type="text/javascript">
- if(localStorage.getItem("theme")==null){
-   localStorage.setItem("theme","1.jpg")
- }
- document.body.style.background = "url('"+localStorage.getItem("theme")+"')"
- document.body.style.backgroundSize = "cover"
- var imgs = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg"];
- render()
- function render(){
-     document.querySelector(".themes").innerHTML=""
-	 for(let i=0;i<imgs.length;i++){
-	    var selectText = "Select"
-	    var textColor = "white"
-	    if(localStorage.theme==imgs[i]){
-	      selectText="Selected"
-	      textColor="green"
-	    }
-	 	document.querySelector(".themes").innerHTML+='<div class="theme" ><img src="'+imgs[i]+'" ><span style="color:'+textColor+';" onclick="set('+i+')">'+selectText+'</span></div>';
-	 }
- }
- function set(i){
-    localStorage.setItem("theme",imgs[i])
-    render()
- 	document.body.style.background = "url('"+imgs[i]+"')"
- 	document.body.style.backgroundSize = "cover"
- }
-</script>
 	</body>
 </html>
