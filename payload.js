@@ -90,7 +90,7 @@ function load_goldhen23(){
     // Carga la carga útil y llama al callback cuando se haya cargado completamente
     setTimeout(function(){
       callback();
-    }, 3000); // Simulamos una carga útil de 3 segundos
+    }, 5000); // Simulamos una carga útil de 3 segundos
   }
   
   load_goldhen23(); // Llamada inicial a la función para cargar GoldHEN primero.
