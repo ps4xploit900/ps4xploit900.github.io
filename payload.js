@@ -82,7 +82,7 @@ function load_goldhen23(){
           // La carga útil de temperatura también se cargó completamente
           // Aquí puedes hacer cualquier otra cosa que necesites después de cargar ambas cargas útiles
         });
-      }, 8000); // Esperamos 8 segundos antes de cargar la carga útil de temperatura
+      }, 5000); // Esperamos 8 segundos antes de cargar la carga útil de temperatura
     });
   }
   
@@ -90,7 +90,7 @@ function load_goldhen23(){
     // Carga la carga útil y llama al callback cuando se haya cargado completamente
     setTimeout(function(){
       callback();
-    }, 5000); // Simulamos una carga útil de 3 segundos
+    }, 3000); // Simulamos una carga útil de 3 segundos
   }
   
   load_goldhen23(); // Llamada inicial a la función para cargar GoldHEN primero.
