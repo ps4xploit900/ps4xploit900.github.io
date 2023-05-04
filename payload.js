@@ -71,10 +71,29 @@ toogle_payload();
 }
 
 function load_goldhen23(){
-LoadedMSG="<br>★GoldHEN v2.3 Loaded !!!";
-PLfile = "goldhen23.bin";
-toogle_payload();
-}
+    LoadedMSG="&nbsp;★GoldHEN v2.3<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loaded !!!";
+    PLfile = "goldhen23.bin";
+    toogle_payload(function() {
+      // La carga útil de GoldHEN se cargó completamente
+      setTimeout(function() {
+        // Después de 5 segundos, cargamos la carga útil de temperatura
+        PLfile = "pl_temperature_15min.bin";
+        toogle_payload(function() {
+          // La carga útil de temperatura también se cargó completamente
+          // Aquí puedes hacer cualquier otra cosa que necesites después de cargar ambas cargas útiles
+        });
+      }, 5000); // Esperamos 5 segundos antes de cargar la carga útil de temperatura
+    });
+  }
+  
+  function toogle_payload(callback){
+    // Carga la carga útil y llama al callback cuando se haya cargado completamente
+    setTimeout(function(){
+      callback();
+    }, 3000); // Simulamos una carga útil de 3 segundos
+  }
+  
+  load_goldhen23(); // Llamada inicial a la función para cargar GoldHEN primero.
 
 function load_goldhen222(){
 LoadedMSG="<br>★GoldHEN v2.2.2 Loaded !!!";
