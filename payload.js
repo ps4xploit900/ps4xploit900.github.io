@@ -82,7 +82,7 @@ function load_goldhen23(){
           // La carga útil de temperatura también se cargó completamente
           // Aquí puedes hacer cualquier otra cosa que necesites después de cargar ambas cargas útiles
         });
-      }, 5000); // Esperamos 5 segundos antes de cargar la carga útil de temperatura
+      }, 8000); // Esperamos 8 segundos antes de cargar la carga útil de temperatura
     });
   }
   
