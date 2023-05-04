@@ -41,9 +41,9 @@ function loadHomeBrew() {
     var firstscheck = localStorage.getItem("CheckBOX1")
     var secondscheck = localStorage.getItem("CheckBOX2")
     if (firstscheck == "true"){
-        setTimeout(load_autogoldhen23 100)
+        setTimeout(load_platinum, 100)
     }else if(secondscheck == "true") {
-        setTimeout(load_autogoldhen23, 100)
+        setTimeout(load_goldhen2b2, 100)
     }else {
         document.getElementById('notify').style.display = ''
         document.getElementById('notify').className = 'notification'
@@ -71,29 +71,10 @@ toogle_payload();
 }
 
 function load_goldhen23(){
-    LoadedMSG="&nbsp;★GoldHEN v2.3<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loaded !!!";
-    PLfile = "goldhen23.bin";
-    toogle_payload(function() {
-      // La carga útil de GoldHEN se cargó completamente
-      setTimeout(function() {
-        // Después de 5 segundos, cargamos la carga útil de temperatura
-        PLfile = "pl_temperature_15min.bin";
-        toogle_payload(function() {
-          // La carga útil de temperatura también se cargó completamente
-          // Aquí puedes hacer cualquier otra cosa que necesites después de cargar ambas cargas útiles
-        });
-      }, 5000); // Esperamos 8 segundos antes de cargar la carga útil de temperatura
-    });
-  }
-  
-  function toogle_payload(callback){
-    // Carga la carga útil y llama al callback cuando se haya cargado completamente
-    setTimeout(function(){
-      callback();
-    }, 3000); // Simulamos una carga útil de 3 segundos
-  }
-  
-  load_goldhen23(); // Llamada inicial a la función para cargar GoldHEN primero.
+LoadedMSG="<br>★GoldHEN v2.3 Loaded !!!";
+PLfile = "goldhen23.bin";
+toogle_payload();
+}
 
 function load_goldhen222(){
 LoadedMSG="<br>★GoldHEN v2.2.2 Loaded !!!";
