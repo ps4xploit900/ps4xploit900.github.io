@@ -41,9 +41,9 @@ function loadHomeBrew() {
     var firstscheck = localStorage.getItem("CheckBOX1")
     var secondscheck = localStorage.getItem("CheckBOX2")
     if (firstscheck == "true"){
-        setTimeout(load_goldhen23 100)
+        setTimeout(load_autogoldhen23 100)
     }else if(secondscheck == "true") {
-        setTimeout(load_goldhen23, 100)
+        setTimeout(load_autogoldhen23, 100)
     }else {
         document.getElementById('notify').style.display = ''
         document.getElementById('notify').className = 'notification'
