@@ -112,8 +112,8 @@ $(document).ready(function() {
     $('#about-2').click(transitionPage);
 });
 
-function load_goldhen24b15(){
-LoadedMSG="<br>★GoldHEN v2.4b15 Activado !!!";
-PLfile = "goldhen24b15.bin";
+function load_goldhen24b16(){
+LoadedMSG="<br>★GoldHEN v2.4b16 Activado !!!";
+PLfile = "goldhen24b16.bin";
 toogle_payload();
 }
