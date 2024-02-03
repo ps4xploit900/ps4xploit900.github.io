@@ -113,7 +113,7 @@ $(document).ready(function() {
 });
 
 function load_goldhen24b16(){
-LoadedMSG="<br>★GoldHEN v2.4b16 Loaded";
+LoadedMSG="<br>★GoldHEN v2.4b16.2 Loaded";
 PLfile = "goldhen24b16.bin";
 toogle_payload();
 }
